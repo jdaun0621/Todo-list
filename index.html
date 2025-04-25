@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To do List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="#" class="logo"><img src="images/Check.png" alt="Logo"></a>
+    </div>
+  </header>
+  <div class="container">
+    <div class="banner">
+      <div class="overlay"></div>
+      <div class="text">
+        <div class="title">목표를 달성하는 첫 걸음</div>
+        <div class="sub">
+          완벽한 할 일 관리의 시작<br>To-do List로 당신의 하루를 효율적으로 관리하세요.
+        </div>
+      </div>
+    </div>
+    <div class="contents">
+      <p>리스트 목록</p>
+      <div class="todoInput">
+        <input type="text" class="todoText" placeholder="해야할 일을 입력하세요." />
+        <button class="addBtn">추가</button>
+      </div>
+      <ul class="todoList">
+        <li class="todo">
+          <span class="task" onclick="toggleComplete(this)">자바스크립트 공부하기</span>
+          <span class="trash" onclick="removeTodo(this)">x</span>
+        </li>
+        <li class="todo">
+          <span class="task" onclick="toggleComplete(this)">수행평가 준비하기</span>
+          <span class="trash" onclick="removeTodo(this)">x</span>
+        </li>
+        <li class="todo">
+          <span class="task" onclick="toggleComplete(this)">운동하기</span>
+          <span class="trash" onclick="removeTodo(this)">x</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
